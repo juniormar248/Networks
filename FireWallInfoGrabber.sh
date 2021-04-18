@@ -16,3 +16,5 @@ DATE=$(date +%d-%m-%Y:%T)
 FN="$DIR/FirewallInfo_"DATE".txt" 
 
 touch $FN
+
+sudo iptables -L >> $FN
